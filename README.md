@@ -115,9 +115,11 @@ The agent can:
 
 The agent uses the appropriate tool based on the user's request and
 returns the tool result as a natural-language response.
+
 ## 🏗️ Architecture
 
-```text
+```
+text
 User
   ↓
 Streamlit UI

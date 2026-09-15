@@ -71,11 +71,11 @@ Context + User Question
 Groq LLM
         ↓
 Final Answer
-
-```markdown
-### 💡 Example Query
 ```
 
+### 💡 Example Query
+
+```text
 User:
 What are the hospital timings?
 
@@ -94,9 +94,10 @@ Generates the answer using the retrieved context
 Assistant:
 The hospital is open from 9:00 AM to 6:00 PM,
 Monday to Saturday.
+```
 
 ## 🤖 AI Agent
-```
+
 The application uses a LangChain AI Agent with a Groq-hosted LLM and
 tool calling to perform hospital management operations.
 
@@ -116,7 +117,7 @@ The agent can:
 The agent uses the appropriate tool based on the user's request and
 returns the tool result as a natural-language response.
 
-### 🏗️ Architecture
+## 🏗️ AI Agent Architecture
 
 ```text
 User
@@ -138,6 +139,7 @@ Tool Result
 AI Agent
   ↓
 Final Response
+```
 
 ## 📁 Project Structure
 
@@ -155,7 +157,6 @@ Hospital_AI_Agent/
 ├── README.md
 └── .gitignore
 ```
-
 ## ▶️ How to Run
 
 ### 1. Clone the repository

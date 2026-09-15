@@ -24,7 +24,8 @@ The application provides hospital management features along with an AI Assistant
 * Python
 * Streamlit
 * LangChain
-* LangGraph / AI Agents
+* LangChain AI Agents
+* LangGraph
 * Groq LLM
 * RAG
 * Hugging Face Embeddings

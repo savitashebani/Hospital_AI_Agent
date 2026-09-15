@@ -49,7 +49,7 @@ The RAG pipeline includes:
 4. Store document embeddings in Chroma vector database
 5. Retrieve the top 2 relevant document chunks
 6. Pass the retrieved context to the Groq LLM
-7. Generate an answer using only the retrieved hospital information
+7. Generate an answer using the retrieved hospital information
 
 ### 🏗️ RAG Architecture
 

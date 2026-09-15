@@ -1,0 +1,21 @@
+Hospital Management System
+
+Hospital Timings:
+The hospital is open from 9:00 AM to 6:00 PM, Monday to Saturday.
+
+Appointment Rules:
+Patients should book appointments in advance.
+Each appointment lasts 30 minutes.
+A doctor cannot have two booked appointments at the same time.
+
+Cancellation Policy:
+Patients can cancel a booked appointment before the appointment time.
+
+Departments:
+Cardiology - Heart-related treatment
+Dermatology - Skin-related treatment
+Orthopedics - Bone and joint-related treatment
+
+Patient Guidelines:
+Patients should arrive 15 minutes before their appointment.
+Patients should carry their previous medical reports if available.

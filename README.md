@@ -58,16 +58,48 @@ LLM
 Answer
 ```
 
-### AI Agent
+## 🤖 AI Agent
 
-The AI Assistant can use tools to perform hospital-related operations such as:
+The application uses a LangChain AI Agent with a Groq-hosted LLM and
+tool calling to perform hospital management operations.
 
-* Finding doctors
-* Booking appointments
-* Cancelling appointments
-* Retrieving appointments
+The agent can:
 
-The agent decides which tool to use based on the user's request.
+- Find doctors by specialization
+- Find doctors by name
+- Find patients
+- Find patients by name
+- Book appointments
+- Cancel appointments
+- Reschedule appointments
+- Retrieve upcoming appointments
+- Retrieve complete appointment history
+- Retrieve patient-specific appointments
+
+The agent uses the appropriate tool based on the user's request and
+returns the tool result as a natural-language response.
+## 🏗️ Architecture
+
+```text
+User
+  ↓
+Streamlit UI
+  ↓
+LangChain AI Agent
+  ↓
+Groq LLM
+  ↓
+Tool Calling
+  ↓
+Hospital Management Tools
+  ↓
+SQLite Database
+  ↓
+Tool Result
+  ↓
+AI Agent
+  ↓
+Final Response
 
 ## 📁 Project Structure
 

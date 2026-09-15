@@ -72,7 +72,9 @@ Groq LLM
         ↓
 Final Answer
 
+```markdown
 ### 💡 Example Query
+```
 
 User:
 What are the hospital timings?
@@ -94,7 +96,7 @@ The hospital is open from 9:00 AM to 6:00 PM,
 Monday to Saturday.
 
 ## 🤖 AI Agent
-
+```
 The application uses a LangChain AI Agent with a Groq-hosted LLM and
 tool calling to perform hospital management operations.
 

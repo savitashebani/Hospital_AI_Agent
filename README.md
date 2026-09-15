@@ -72,7 +72,7 @@ Groq LLM
         ↓
 Final Answer
 
-### 🏗️ Example Query
+### 💡 Example Query
 
 User:
 What are the hospital timings?

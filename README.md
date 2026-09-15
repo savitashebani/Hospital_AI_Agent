@@ -34,29 +34,64 @@ The application provides hospital management features along with an AI Assistant
 
 ## 🧠 Generative AI Components
 
-### RAG
+### 🔎 Retrieval-Augmented Generation (RAG)
 
-The project uses Retrieval-Augmented Generation to answer questions based on hospital information stored in documents.
+The project uses Retrieval-Augmented Generation (RAG) to answer
+hospital-related questions using information stored in a hospital
+knowledge document.
 
 The RAG pipeline includes:
+
+1. Load hospital knowledge from `hospital_knowledge.txt`
+2. Split the document using `RecursiveCharacterTextSplitter`
+3. Generate embeddings using Hugging Face
+   `sentence-transformers/all-MiniLM-L6-v2`
+4. Store document embeddings in Chroma vector database
+5. Retrieve the top 2 relevant document chunks
+6. Pass the retrieved context to the Groq LLM
+7. Generate an answer using only the retrieved hospital information
+
+### 🏗️ RAG Architecture
 
 ```text
 Hospital Knowledge Document
         ↓
 Text Splitting
         ↓
-Embeddings
+Hugging Face Embeddings
         ↓
 Chroma Vector Database
         ↓
-Similarity Search
+Retriever
         ↓
-Relevant Context
+Top 2 Relevant Chunks
         ↓
-LLM
+Context + User Question
         ↓
-Answer
-```
+Groq LLM
+        ↓
+Final Answer
+
+### 🏗️ Example Query
+
+User:
+What are the hospital timings?
+
+        ↓
+
+Retriever:
+Finds relevant information from hospital_knowledge.txt
+
+        ↓
+
+LLM:
+Generates the answer using the retrieved context
+
+        ↓
+
+Assistant:
+The hospital is open from 9:00 AM to 6:00 PM,
+Monday to Saturday.
 
 ## 🤖 AI Agent
 
